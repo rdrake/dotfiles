@@ -14,6 +14,10 @@ if [[ "$unamestr" == "Linux" ]]; then
 	alias ls='ls --color=auto'
 	export PATH=$PATH:/opt/maven/bin:/opt/java/bin:$HOME/sbin:$HOME/bin:$HOME/.local/bin
 	export JAVA_HOME=/opt/java
+else
+	# Brew demands perfection.
+	export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 fi
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 export REPO=$HOME/.m2
