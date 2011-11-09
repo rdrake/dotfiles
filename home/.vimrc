@@ -39,4 +39,4 @@ set ai
 set si
 set wrap
 
-au BufNewFile,BufRead *.cljs set filetype=clj
+au BufNewFile,BufRead *.cljs set filetype=clojure
