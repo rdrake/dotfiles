@@ -16,7 +16,8 @@ if [[ "$unamestr" == "Linux" ]]; then
 	export JAVA_HOME=/opt/java
 else
 	# Brew demands perfection.
-	export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+	export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/workspace/cake/bin:$HOME/workspace/clojurescript/bin:$HOME/workspace/cljs-watch
+	export CLOJURESCRIPT_HOME=$HOME/workspace/clojurescript
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"

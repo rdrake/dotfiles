@@ -38,3 +38,5 @@ set noswapfile
 set ai
 set si
 set wrap
+
+au BufNewFile,BufRead *.cljs set filetype=clj
