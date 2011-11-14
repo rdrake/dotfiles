@@ -13,3 +13,12 @@
 [submodule "home/.vim/bundle/html5"]
 	path = home/.vim/bundle/html5
 	url = https://github.com/othree/html5.vim.git
+[submodule "home/.vim/bundle/vim-css3-syntax"]
+	path = home/.vim/bundle/vim-css3-syntax
+	url = https://github.com/hail2u/vim-css3-syntax.git
+[submodule "home/.vim/bundle/vim-css-color"]
+	path = home/.vim/bundle/vim-css-color
+	url = https://github.com/skammer/vim-css-color.git
+[submodule "home/.vim/bundle/vim-less"]
+	path = home/.vim/bundle/vim-less
+	url = https://github.com/groenewege/vim-less.git
