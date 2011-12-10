@@ -16,6 +16,8 @@ let g:mapleader = ","
 
 set ruler
 
+set spell
+
 set ignorecase
 set hlsearch
 set smartcase
