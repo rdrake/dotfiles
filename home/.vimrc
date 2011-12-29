@@ -15,6 +15,7 @@ let mapleader = ","
 let g:mapleader = ","
 
 set ruler
+set nu
 
 set spell
 
