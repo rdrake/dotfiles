@@ -48,4 +48,4 @@ map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 
 
 set guifont=Consolas:h14
-let g:clj_paren_rainbow=1
+let vimclojure#ParenRainbow = 1
