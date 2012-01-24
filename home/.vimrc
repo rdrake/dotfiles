@@ -46,4 +46,6 @@ au BufNewFile,BufRead *.cljs set filetype=clojure
 
 map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
 
-let vimclojure#WantNailgun = 1
+
+set guifont=Consolas:h14
+let g:clj_paren_rainbow=1
