@@ -36,7 +36,7 @@ zmodload -a zsh/zprof zprof
 zmodload -ap zsh/mapfile mapfile
 
 
-PATH="$HOME/.rbenv/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/"
+PATH="/bin:/sbin:/usr/bin:/usr/sbin:$HOME/.rbenv/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/"
 TZ="America/New_York"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
