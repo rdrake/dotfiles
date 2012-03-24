@@ -36,7 +36,7 @@ zmodload -a zsh/zprof zprof
 zmodload -ap zsh/mapfile mapfile
 
 
-PATH="/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/:/usr/local/Cellar/ruby/1.9.3-p0/bin:$PATH"
+PATH="$HOME/.rbenv/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/local/sbin/"
 TZ="America/New_York"
 HISTFILE=$HOME/.zhistory
 HISTSIZE=1000
