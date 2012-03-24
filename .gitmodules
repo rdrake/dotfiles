@@ -46,3 +46,6 @@
 [submodule "home/.vim/bundle/nerdcommenter"]
 	path = home/.vim/bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "home/.rbenv"]
+	path = home/.rbenv
+	url = git://github.com/sstephenson/rbenv.git
