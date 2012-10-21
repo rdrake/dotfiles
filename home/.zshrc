@@ -145,3 +145,7 @@ zstyle ':completion:*:ssh:*' tag-order \
 zstyle ':completion:*:ssh:*' group-order \
    hosts-domain hosts-host users hosts-ipaddr
 zstyle '*' single-ignored show
+
+# Add firebird on OS X
+export FIREBIRD_HOME=/Library/Frameworks/Firebird.framework/Resources
+export PATH=$PATH:$FIREBIRD_HOME/bin
