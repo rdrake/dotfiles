@@ -1,49 +1,62 @@
-call pathogen#infect()
+set shell=/usr/local/bin/zsh
 
-syntax on
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'tomasr/molokai'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdtree'
+Bundle 'jcf/vim-latex'
+Bundle 'vim-scripts/VimClojure'
+Bundle 'scrooloose/syntastic'
+Bundle 'bling/vim-airline'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'othree/html5.vim'
+Bundle 'seebi/semweb.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'hdima/python-syntax'
+
 filetype plugin indent on
 
-let g:molokai_original = 0
-set t_Co=256
 colorscheme molokai
 
-set ts=2 sw=2 noet
-let g:indent_guides_start = 1
-let g:indent_guides_start_level = 1
+set guifont=Inconsolata\ for\ Powerline:h16
 
-let mapleader = ","
-let g:mapleader = ","
+let g:airline_powerline_fonts = 1
 
-set ruler
-set nu
+set laststatus=2
+
+syntax enable
+
+set autoindent
+set expandtab
+set smarttab
+
+set shiftwidth=2
+set softtabstop=2
 
 set ignorecase
-set hlsearch
 set smartcase
+set incsearch
 
-set magic
+set showcmd
+set showmatch
 
+set ruler
+set number
 set noerrorbells
-set novisualbell
-set t_vb=
-set tm=500
 
-if has("gui_running")
-	set guioptions-=T
-endif
-
-set nobackup
-set nowb
-set noswapfile
-
-set ai
-set si
 set wrap
 
-au BufNewFile,BufRead *.cljs set filetype=clojure
+set colorcolumn=69
 
-map <leader>jt  <Esc>:%!json_xs -f json -t json-pretty<CR>
+let mapleader = ","
 
-
-set guifont=Consolas:h14
 let vimclojure#ParenRainbow = 1
+
+au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
