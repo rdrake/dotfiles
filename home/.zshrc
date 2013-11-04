@@ -10,3 +10,5 @@ plugins=(autoenv brew cloudapp django git github lein osx python virtualenv vund
 source $ZSH/oh-my-zsh.sh
 
 export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/MacGPG2/bin:/usr/texbin:$PATH
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
