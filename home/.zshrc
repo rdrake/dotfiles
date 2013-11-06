@@ -22,5 +22,8 @@ unsetopt nomatch
 # Jump around, yo.
 source `brew --prefix`/etc/profile.d/z.sh
 
+# Blow your mind.
+source `brew --prefix`/opt/autoenv/activate.sh
+
 # Open files in tabs instead of new windows.
 alias mvim="open -a MacVim"
