@@ -1,14 +1,26 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+#
+# Executes commands at the start of an interactive session.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#   Kevin Jalbert <kevin.j.jalbert@gmail.com>
+#   Richard Drake <rdrake@rdrake.org>
+#
 
-# Set name of the theme to load.
-ZSH_THEME="agnoster"
+# Source Prezto.
+if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+fi
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(autoenv brew cloudapp django git github lein osx python virtualenv vundle)
+# Disable beeps.
+unsetopt beep
 
-source $ZSH/oh-my-zsh.sh
+# Make zsh glob matching behave same as bash
+# This fixes the "zsh: no matches found" errors.
+unsetopt nomatch
 
-export PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/MacGPG2/bin:/usr/texbin:$PATH
+# Jump around, yo.
+source `brew --prefix`/etc/profile.d/z.sh
 
-export ANDROID_HOME=/usr/local/opt/android-sdk
+# Open files in tabs instead of new windows.
+alias mvim="open -a MacVim"
