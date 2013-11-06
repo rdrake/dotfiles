@@ -27,3 +27,6 @@ source `brew --prefix`/opt/autoenv/activate.sh
 
 # Open files in tabs instead of new windows.
 alias mvim="open -a MacVim"
+
+# Get back my precious reverse history search.
+bindkey "^R" history-incremental-search-backward
