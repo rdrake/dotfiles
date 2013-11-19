@@ -12,7 +12,6 @@ Bundle 'tomasr/molokai'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'scrooloose/nerdtree'
 Bundle 'jcf/vim-latex'
-Bundle 'vim-scripts/VimClojure'
 Bundle 'scrooloose/syntastic'
 Bundle 'bling/vim-airline'
 Bundle 'airblade/vim-gitgutter'
@@ -20,6 +19,10 @@ Bundle 'othree/html5.vim'
 Bundle 'seebi/semweb.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'hdima/python-syntax'
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'tpope/vim-classpath'
+Bundle 'tpope/vim-fireplace'
 
 filetype plugin indent on
 
@@ -57,6 +60,16 @@ set colorcolumn=69
 
 let mapleader = ","
 
-let vimclojure#ParenRainbow = 1
+" vim-clojure-static
+
+" Fuzzy indentation (so things like defroutes will indent correctly)
+let g:clojure_fuzzy_indent = 1
+
+" Align multiline strings at words, not quotation character
+let g:clojure_align_multiline_strings = 1
+
+" Some bindings for vim-fireplace
+nnoremap <C-e> :Eval<CR>
+nnoremap E :%Eval<CR> 
 
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
