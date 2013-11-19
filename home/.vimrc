@@ -72,4 +72,10 @@ let g:clojure_align_multiline_strings = 1
 nnoremap <C-e> :Eval<CR>
 nnoremap E :%Eval<CR> 
 
+" Open nerdtree if no files were opened
+autocmd vimenter * if !argc() | NERDTree | endif
+
+" Open nerdtree with shortcut
+map <C-n> :NERDTreeToggle<CR>
+
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
