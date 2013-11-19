@@ -71,6 +71,8 @@ let g:clojure_align_multiline_strings = 1
 " Some bindings for vim-fireplace
 nnoremap <C-e> :Eval<CR>
 nnoremap E :%Eval<CR> 
+map <Leader>t :w<CR>:Require<CR>:Eval (run-tests)<CR>
+map <Leader>T :w<CR>:Require<CR>:Eval (run-all-tests)<CR>
 
 " Open nerdtree if no files were opened
 autocmd vimenter * if !argc() | NERDTree | endif
